@@ -1,5 +1,0 @@
-2025/08/13-16:50:01.415 2008 Creating DB C:\Users\braco\AppData\Local\Temp\flutter_tools.193093ea\flutter_tools_chrome_device.d7664aa6\Default\IndexedDB\http_localhost_63128.indexeddb.leveldb since it was missing.
-2025/08/13-16:50:01.419 2008 Reusing MANIFEST C:\Users\braco\AppData\Local\Temp\flutter_tools.193093ea\flutter_tools_chrome_device.d7664aa6\Default\IndexedDB\http_localhost_63128.indexeddb.leveldb/MANIFEST-000001
-2025/08/13-16:50:31.573 52e8 Level-0 table #5: started
-2025/08/13-16:50:31.587 52e8 Level-0 table #5: 625810 bytes OK
-2025/08/13-16:50:31.588 52e8 Delete type=0 #3
