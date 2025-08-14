@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import 'core/services/hive_config.dart';
-import 'core/utils/default_data.dart';
+// ⚠️ Ya NO importes default_data.dart aquí para no sembrar siempre.
+// import 'core/utils/default_data.dart';
+import 'seed/seed_guard.dart'; // ← el guard que creaste
 
 // Vistas
 import 'views/inicio_screen.dart';
 import 'views/login_screen.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Inicializa Hive y datos, adaptado para Web y otros
-  await limpiarHive();
-  await initHive(); // Solo hace algo en no-Web
-  await borrarYAgregarDatosPorDefecto(); // Adaptado multiplataforma
+  // Inicializa Hive (registros de adapters, etc.)
+  await initHive();
+
+  // Siembra/seed solo si hace falta (primera vez) o cuando lo fuerces en debug.
+  await initDatosPorDefectoSiHaceFalta();
 
   runApp(const MyApp());
 }
