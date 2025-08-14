@@ -1,0 +1,1 @@
+ C:\\Users\\braco\\OneDrive\\Documentos\\Proyectos_Programacion\\App\\safetrack\\.dart_tool\\flutter_build\\d605a3baf4a3fbf6f8c7c4b0ff7b13c1\\native_assets.json: 
